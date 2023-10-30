@@ -9,7 +9,10 @@ use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoleImportController;
 use App\Http\Controllers\UserImportController;
+use App\Http\Controllers\ProdukImportController;
 use App\Http\Controllers\KategoriProdukController;
+use App\Http\Controllers\SupplierImportController;
+use App\Http\Controllers\KategoriProdukImportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,3 +49,9 @@ Route::get("role-import", "RoleImportController@index")->name("role-import");
 Route::post("role-import", "RoleImportController@process")->name("role-process");
 Route::get("user-import", "UserImportController@index")->name("user-import");
 Route::post("user-import", "UserImportController@process")->name("user-process");
+Route::get("kategori_produk-import", "KategoriProdukImportController@index")->name("kategori_produk-import");
+Route::post("kategori_produk-import", "KategoriProdukImportController@process")->name("kategori_produk-process");
+Route::get("supplier-import", "SupplierImportController@index")->name("supplier-import");
+Route::post("supplier-import", "SupplierImportController@process")->name("supplier-process");
+Route::get("produk-import", "ProdukImportController@index")->name("produk-import");
+Route::post("produk-import", "ProdukImportController@process")->name("produk-process");

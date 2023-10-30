@@ -19,7 +19,7 @@ class CreateProduksTable extends Migration
             $table->foreignId("supplier_id")->constrained()->onDelete("cascade");
             $table->foreignId("kategori_produk_id")->constrained()->onDelete("cascade");
             $table->string("name")->unique();
-            $table->json("barcode");
+            $table->json("barcode")->nullable();
             $table->integer("price");
             $table->timestamp("created_at")->useCurrent();
             $table->timestamp("updated_at")->useCurrent()->useCurrentOnUpdate();

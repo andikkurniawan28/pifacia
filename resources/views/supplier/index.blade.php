@@ -6,6 +6,7 @@
 
 @section("main")
 <a href="{{ route("supplier.create") }}" class="btn btn-primary btn-sm">Tambah</a>
+<a href="{{ route("supplier-import") }}" class="btn btn-success btn-sm">Impor</a>
 <div class="table-responsive">
     <br>
     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
